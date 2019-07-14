@@ -67,7 +67,7 @@
   "dependencies": {
     "@types/aws-lambda": "^8.10.19",
     "@types/http-errors": "^1.6.1",
-    "ajv": "^6.9.1",
+    "ajv": "^6.10.2",
     "ajv-i18n": "^3.4.0",
     "ajv-keywords": "^3.4.0",
     "busboy": "^0.3.1",
