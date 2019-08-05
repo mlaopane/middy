@@ -373,14 +373,16 @@ And here is an example of a middleware written with async/await:
 
 ```javascript
 const asyncValidator = () => {
-  before: async (handler) => {
-    if (handler.event.body) {
-      await asyncValidate(handler.event.body)
+  return {
+    before: async (handler) => {
+      if (handler.event.body) {
+        await asyncValidate(handler.event.body)
 
-      return {foo: bar}
+        return {foo: bar}
+      }
+
+      return
     }
-
-    return
   }
 }
 
